@@ -1,6 +1,6 @@
 // Navigation Bar
 document.getElementById("home-button").onclick = function() {
-    window.location.href = "home.html"};
+    window.location.href = "index.html"};
 
 document.getElementById("dev-button").onclick = function() {
     window.location.href = "developers.html"};
