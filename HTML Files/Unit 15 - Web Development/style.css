@@ -1,0 +1,577 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(211, 211, 211, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  gap: 50px;  
+}
+
+#Background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: -1;
+}
+
+#header-left, #header-left2, #header-left3, #header-left4 {
+  display: flex;
+  text-align: center;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header-left h1, #header-left2 h1, #header-left3 h1, #header-left4 h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+#header-left h3, #header-left2 h3, #header-left3 h3, #header-left4 h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+}
+
+#Speech-btn {
+  background-color:white;
+  padding: 8px 12px;
+  margin-right: 300px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#image-container {
+    justify-content: center;
+    align-items: center;;
+}
+
+/* Home Page */
+#intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#introbox {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 10px grey;
+    position: relative;
+    z-index: 1000;
+}
+
+#intro {
+    height: 40%;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 40px;
+}
+
+#intro p {
+    font-size: 22px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#image {
+    width: 50%;
+    height: 40%;
+    border-radius: 8px;
+    justify-content: center; 
+    align-items: center;
+    
+}
+#image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#contactbox {
+   clear: both;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 10px grey;
+    position: relative;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+/* Our Developers Page */
+
+#dev1 {
+  height: 210px;
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.7);
+  box-shadow: 0px 8px 10px grey;
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+#devcontainer1, #devcontainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#dev2, #dev3, #dev4, #dev5, #dev6 {
+  height: 210px;
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.7);
+  box-shadow: 0px 8px 10px grey;
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#dev1 img, #dev2 img, #dev3 img, #dev4 img, #dev5 img, #dev6 img {
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Course Page */
+#coursescontainer1, #coursescontainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  columns: 3;
+}
+
+#course1, #course2, #course3, #course4, #course5, #course6 {
+  height: 230px;
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.7);
+  box-shadow: 0px 8px 10px grey;
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#applycourse1, #applycourse2, #applycourse3, #applycourse4, #applycourse5, #applycourse6 {
+  box-shadow: 0px 8px 10px grey;
+  padding: 10px 50px;
+  background-color: rgb(173, 216, 230, 0.4);
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#applicationboxcourses, #completecourseapplication{
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 580px;
+  width: 400px;
+  display: none;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 8px 8px 5px lightgrey;
+}
+
+#completecourseapplication{
+  font-size: 30px;
+  height: 220px;
+  width: 400px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  color: gray;
+}
+
+#applicationboxcourses input, #applicationboxcourses select {
+  background-color: lightgrey;
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  border: none;
+}
+
+#postcode-city {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#postcode-city div {
+  flex: 1;
+}
+
+#applicationboxcourses button, #completecourseapplication button{
+  background-color: rgb(173, 216, 230, 0.7);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+/* Apply For a Job Page */
+
+#jobscontainer1, #jobscontainer2, #jobscontainer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  columns: 3;
+}
+
+#job1, #job2, #job3, #job4, #job5, #job6, #job7, #job8, #job9{
+  height: 210px;
+  width: 330px;
+  background-color: rgb(255, 255, 255, 0.7);
+  box-shadow: 0px 8px 10px grey;
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#applyjob1, #applyjob2, #applyjob3, #applyjob4, #applyjob5, #applyjob6, #applyjob7, #applyjob8, #applyjob9, 
+#close2 {
+  box-shadow: 0px 8px 10px grey;
+  padding: 10px 50px;
+  background-color: rgb(173, 216, 230, 0.4);
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#applicationboxjobs, #completejobapplication{
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 800px;
+  width: 600px;
+  display: none;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 8px 8px 5px lightgrey;
+}
+
+#completejobapplication{
+  font-size: 30px;
+  height: 230px;
+  width: 400px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  color: gray;
+}
+
+#applicationboxjobs input, #applicationboxjobs select {
+  background-color: lightgrey;
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  border: none;
+}
+
+#postcode-city {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#postcode-city div {
+  flex: 1;
+}
+
+#canceljob, #applyjob {
+  background-color: rgb(173, 216, 230, 0.7);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+#coverletter {
+  height: 50px;
+  background-color: lightgrey;
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+}
+
+#cv {
+  height: 50px;
+  background-color: lightgrey;
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Footer */
+
+#removebackgroundbox{
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(128, 128, 128, 0.7);
+  height: 160px;
+  width: 260px;
+  display: none;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 8px 8px 5px lightgrey;
+}
+
+#colour1, #colour2, #colour3, #colour4 , #colour5, #colour6, #colour7, #colour8, #colour9, #colour10, #colour11, 
+#colour12, #colour13, #colour14, #colour15, #colour16 {
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+#closecolour {
+  text-align: center;
+  border-radius: 8px;
+  padding: 2px 20px;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(173, 216, 230, 0.7);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: lightgrey;
+  position: absolute;
+  bottom: 2px;
+  z-index: 1000;
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+  position: absolute;
+}
+.menu button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  
+
+}
+
+#remove-btn {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Mobile Friendly Css */
+@media (max-width: 1080px) {
+
+  body {
+    font-size: 16px
+  }
+
+  #header {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    position: fixed;
+    z-index: 9999;
+
+  }
+
+  #header-left #header-left2, #header-left3, #header-left4 {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  #Speech-btn {
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  #introbox {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    font-size: 50px;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #intro h2 {
+    font-size: 30px;
+  }
+
+  #intro p {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  #image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contactbox {
+    width: 90%;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  #devcontainer1,
+  #devcontainer2,
+  #coursescontainer1,
+  #coursescontainer2,
+  #jobscontainer1,
+  #jobscontainer2,
+  #jobscontainer3 {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  #dev1, #dev2, #dev3, #dev4, #dev5, #dev6,
+  #course1, #course2, #course3, #course4, #course5, #course6,
+  #job1, #job2, #job3, #job4, #job5, #job6, #job7, #job8, #job9 {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  #applicationboxcourses,
+  #completecourseapplication,
+  #applicationboxjobs,
+  #completejobapplication {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #applicationboxcourses input,
+  #applicationboxcourses select,
+  #applicationboxjobs input,
+  #applicationboxjobs select,
+  #coverletter,
+  #cv {
+    width: 90%;
+  }
+
+  #postcode-city {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 5%;
+    padding: 20px 20px;
+    text-align: center;
+    position: fixed;
+  }
+
+  .menu {
+    flex-direction: row;
+    row-gap: 10px;
+    position: static;
+    margin-bottom: 7%;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+}
